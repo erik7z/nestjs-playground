@@ -24,6 +24,17 @@ This repo is made for checking base functionality of nestjs application
                 
               > Providers are decorated with `@Injectable()`, indicating they can be managed by the NestJS dependency injection system.
             - [ ] Middleware
+              > Middleware in NestJS provides a way to handle requests and responses, acting as a bridge between the request and the actual route handlers;
+            
+              >  A function with access to the request object (`req`), the response object (`res`), and the next middleware in line (`next`).
+              
+              > Middleware used to:
+                > - Logging incoming requests
+                > - Authentication and authorization
+                > - Input validation
+                > - Setting headers or modifying the response
+                > - Handling CORS
+
     - [ ] Set Up a NestJS Project
         - [ ] Create a new project using the CLI
         - [ ] Explore the structure of the project to understand the default setup.
