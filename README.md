@@ -7,8 +7,8 @@ This repo is made for checking base functionality of nestjs application
 
 
 - [ ] Chat GPT manual:
-    - [ ] Basics of NestJS:
-        - [ ] Familiarize yourself with the core concepts:
+    - [X] Basics of NestJS:
+        - [X] Familiarize yourself with the core concepts:
             - [X] Controllers
                 > Controllers are responsible for handling incoming requests and returning responses to the client.
             - [X] Modules
@@ -23,7 +23,7 @@ This repo is made for checking base functionality of nestjs application
               > A typical use case for providers in NestJS is data-fetching, where you'd have a service that fetches data from a database or another API, and this service is then used by a controller.
                 
               > Providers are decorated with `@Injectable()`, indicating they can be managed by the NestJS dependency injection system.
-            - [ ] Middleware
+            - [X] Middleware
               > Middleware in NestJS provides a way to handle requests and responses, acting as a bridge between the request and the actual route handlers;
             
               >  A function with access to the request object (`req`), the response object (`res`), and the next middleware in line (`next`).
@@ -36,7 +36,7 @@ This repo is made for checking base functionality of nestjs application
                 > - Handling CORS
 
     - [ ] Set Up a NestJS Project
-        - [ ] Create a new project using the CLI
+        - [X] Create a new project using the CLI
         - [ ] Explore the structure of the project to understand the default setup.
     - [ ] Deep Dive into Main Concepts:
         - [ ] Controllers:
