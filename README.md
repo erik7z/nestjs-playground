@@ -63,6 +63,11 @@ This repo is made for checking base functionality of nestjs application
             > - Role-based access control.
             > - Validating the identity of a user.
             > - Any decision-making that requires context about which specific route or controller method is being accessed.
+        - [X] Interceptors
+          > Interceptors perfect for various tasks like handling and transforming responses, logging, caching, etc
+            - [X] Learn their role in transforming the data returned from route handlers or for logging purposes.
+            - [X] create interceptors and use them to intercept requests and responses.
+            - [X] use the built-in interceptors to handle common tasks.
         - [ ] Controllers:
             - [ ] how routes are defined,
             - [ ] handle different HTTP methods
@@ -86,10 +91,7 @@ This repo is made for checking base functionality of nestjs application
             - [ ] craft custom responses.
         - [ ] Authentication and Authorization
             - [ ] integrate authentication using JWTs, sessions, or other methods
-        - [ ] Interceptors
-            - [ ] create interceptors and use them to intercept requests and responses.
-            - [ ] Learn their role in transforming the data returned from route handlers or for logging purposes.
-            - [ ] use the built-in interceptors to handle common tasks.
+
         - [ ] Pipes
             - [ ] create pipes and use them to validate data.
             - [ ] use the built-in pipes to validate data.
