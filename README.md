@@ -8,22 +8,29 @@ This repo is made for checking base functionality of nestjs application
 
 - [ ] Chat GPT manual:
     - [X] Basics of NestJS:
+      - [X] Set Up a NestJS Project
+        - [X] Create a new project using the CLI
+        - [X] Explore the structure of the project to understand the default setup.
+
         - [X] Familiarize yourself with the core concepts:
-            - [X] Controllers
+           - [X] 01 Modules
+              > Modules are used to organize the application structure into cohesive blocks of related functionality.
+
+              > Each part of the app (like users, orders, products, etc.) can have its own module, which encapsulates the related functionalities.
+
+              > In NestJS, a module is a class decorated with @Module()            
+
+           - [X] 02 Controllers
                 > Controllers are responsible for handling incoming requests and returning responses to the client.
-            - [X] Modules
-                > Modules are used to organize the application structure into cohesive blocks of related functionality.
-                
-                > Each part of the app (like users, orders, products, etc.) can have its own module, which encapsulates the related functionalities.
-                
-                > In NestJS, a module is a class decorated with @Module()
-            - [X] Providers (Services)
+
+           - [X] 03 Providers (Services)
               > Providers can be services, repositories, factories, helpers, or any other classes that your application needs to function.
             
               > A typical use case for providers in NestJS is data-fetching, where you'd have a service that fetches data from a database or another API, and this service is then used by a controller.
                 
               > Providers are decorated with `@Injectable()`, indicating they can be managed by the NestJS dependency injection system.
-            - [X] Middleware
+          
+           - [X] 04 Middleware
               > Middleware in NestJS provides a way to handle requests and responses, acting as a bridge between the request and the actual route handlers;
             
               >  A function with access to the request object (`req`), the response object (`res`), and the next middleware in line (`next`).
@@ -34,11 +41,28 @@ This repo is made for checking base functionality of nestjs application
                 > - Input validation
                 > - Setting headers or modifying the response
                 > - Handling CORS
-
-    - [ ] Set Up a NestJS Project
-        - [X] Create a new project using the CLI
-        - [ ] Explore the structure of the project to understand the default setup.
+ 
     - [ ] Deep Dive into Main Concepts:
+        - [X] Guards
+          > Guard is a function that determines whether a given request will be handled by the route handler or not.
+
+          > Guard is a class annotated with the @Injectable() decorator. It implements the CanActivate interface.
+          
+          - [X] Create guards and use them to protect routes.
+          - [X] Use the built-in guards to protect routes.
+            > - AuthGuard / JwtAuthGuard
+            > - RolesGuard
+            > - ThrottlerGuard
+          - [X] Compare Guards and middleware: 
+            > Use Middleware for:
+            >  - General tasks applicable to multiple routes (e.g., logging, CORS handling).
+            >  - Global input validation or transformation.
+            >  - Setting up some global state or context for later use in the request lifecycle.
+        
+            > Use Guards for:  
+            > - Role-based access control.
+            > - Validating the identity of a user.
+            > - Any decision-making that requires context about which specific route or controller method is being accessed.
         - [ ] Controllers:
             - [ ] how routes are defined,
             - [ ] handle different HTTP methods
@@ -62,9 +86,6 @@ This repo is made for checking base functionality of nestjs application
             - [ ] craft custom responses.
         - [ ] Authentication and Authorization
             - [ ] integrate authentication using JWTs, sessions, or other methods
-        - [ ] Guards
-            - [ ] create guards and use them to protect routes.
-            - [ ] use the built-in guards to protect routes.
         - [ ] Interceptors
             - [ ] create interceptors and use them to intercept requests and responses.
             - [ ] Learn their role in transforming the data returned from route handlers or for logging purposes.
