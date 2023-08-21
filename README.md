@@ -5,11 +5,12 @@ This repo is made for checking base functionality of nestjs application
 - [ ] [NesJS docs manual ](https://docs.nestjs.com):
     - [X] [First steps](https://docs.nestjs.com/first-steps)
 
-
 - [ ] Chat GPT manual:
     - [X] Basics of NestJS:
+      
       - [X] Set Up a NestJS Project
         - [X] Create a new project using the CLI
+        
         - [X] Explore the structure of the project to understand the default setup.
 
         - [X] Familiarize yourself with the core concepts:
@@ -42,7 +43,7 @@ This repo is made for checking base functionality of nestjs application
                 > - Setting headers or modifying the response
                 > - Handling CORS
  
-    - [ ] Deep Dive into Main Concepts:
+    - [ ] Deep Dive into NestJS Main Concepts:
         - [X] Guards
           > Guard is a function that determines whether a given request will be handled by the route handler or not.
 
@@ -63,11 +64,37 @@ This repo is made for checking base functionality of nestjs application
             > - Role-based access control.
             > - Validating the identity of a user.
             > - Any decision-making that requires context about which specific route or controller method is being accessed.
+      
         - [X] Interceptors
           > Interceptors perfect for various tasks like handling and transforming responses, logging, caching, etc
             - [X] Learn their role in transforming the data returned from route handlers or for logging purposes.
             - [X] create interceptors and use them to intercept requests and responses.
             - [X] use the built-in interceptors to handle common tasks.
+      
+        - [X] Pipes
+            > Pipes can either transform input data to a desired form or validate input data to ensure it meets expected criteria.
+              
+            - [X] create pipes and use them to validate data.
+            - [X] use the built-in pipes to validate data.
+        
+        - [ ] Databases
+            - [ ] connect to a database
+            - [ ] use the built-in modules to interact with a database.
+            - [ ] use @nestjs/typeorm package.
+            - [ ] Repository pattern, and perform CRUD operations.
+
+        - [ ] Exception Filters
+            - [ ] create exception filters and use them to handle errors.
+            - [ ] use the built-in exception filters to handle common errors.
+            - [ ] craft custom responses.
+
+        - [ ] Testing
+            - [ ] write unit tests for your NestJS application.
+            - [ ] use the built-in testing utilities.
+
+        - [ ] Authentication and Authorization
+            - [ ] integrate authentication using JWTs, sessions, or other methods
+
         - [ ] Controllers:
             - [ ] how routes are defined,
             - [ ] handle different HTTP methods
@@ -85,24 +112,7 @@ This repo is made for checking base functionality of nestjs application
             - [ ] create middleware
             - [ ] use it to intercept requests.
             - [ ] run code before the request handlers, for tasks like logging, authentication
-        - [ ] Exception Filters
-            - [ ] create exception filters and use them to handle errors.
-            - [ ] use the built-in exception filters to handle common errors.
-            - [ ] craft custom responses.
-        - [ ] Authentication and Authorization
-            - [ ] integrate authentication using JWTs, sessions, or other methods
 
-        - [ ] Pipes
-            - [ ] create pipes and use them to validate data.
-            - [ ] use the built-in pipes to validate data.
-        - [ ] Databases
-            - [ ] connect to a database
-            - [ ] use the built-in modules to interact with a database.
-            - [ ] use @nestjs/typeorm package.
-            - [ ] Repository pattern, and perform CRUD operations.
-        - [ ] Testing
-            - [ ] write unit tests for your NestJS application.
-            - [ ] use the built-in testing utilities.
         - [ ] Best Practices
             - [ ] Dive into the official documentation and read about best practices
 
