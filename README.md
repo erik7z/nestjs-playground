@@ -76,17 +76,19 @@ This repo is made for checking base functionality of nestjs application
               
             - [X] create pipes and use them to validate data.
             - [X] use the built-in pipes to validate data.
+
+      - [X] Exception Filters
+           > They allow you to implement custom error handling logic
+
+          - [X] create exception filters and use them to handle errors.
+          - [X] use the built-in exception filters to handle common errors.
+          - [X] craft custom responses.    
         
         - [ ] Databases
             - [ ] connect to a database
             - [ ] use the built-in modules to interact with a database.
             - [ ] use @nestjs/typeorm package.
             - [ ] Repository pattern, and perform CRUD operations.
-
-        - [ ] Exception Filters
-            - [ ] create exception filters and use them to handle errors.
-            - [ ] use the built-in exception filters to handle common errors.
-            - [ ] craft custom responses.
 
         - [ ] Testing
             - [ ] write unit tests for your NestJS application.
